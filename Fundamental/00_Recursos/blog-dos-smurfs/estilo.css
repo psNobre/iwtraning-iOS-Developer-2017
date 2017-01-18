@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family:Arial;
+}
+
+h1, h2 {
+	color:#993300;
+}
+
+h1 {
+	/*
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#000000;
+	*/
+	
+	border-bottom:1px solid #000000;
+}
+
+ul {
+	height:30px;
+	padding:10px 0px 0px 20px;
+	list-style:none;
+	background-color:#ebd8d8;
+}
+
+	li {	
+		display:inline;
+		margin-right:20px;
+	}
+	
+a:link, a:visited {
+	font-size:14px;
+	font-weight:bold;
+	color:#990000;
+	text-decoration:none;
+}
+
+a:hover, a:active {
+	color:#999999;
+}
