@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DVw-8f-XLd" kind="relationship" relationship="viewControllers" id="Y9p-sf-9Fw"/>
+                        <segue destination="Kd0-LM-pRK" kind="relationship" relationship="viewControllers" id="J1T-64-RtU"/>
+                        <segue destination="Nis-iS-ju7" kind="relationship" relationship="viewControllers" id="A8n-OC-gee"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Pedra-->
+        <scene sceneID="7Jf-Ne-OqO">
+            <objects>
+                <viewController id="DVw-8f-XLd" customClass="PapelViewController" customModule="PedraPapelTesoura" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Olk-Cz-5Wh"/>
+                        <viewControllerLayoutGuide type="bottom" id="o8W-6b-eQ9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H6b-SF-gg8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PEDRA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3y-wP-aaQ">
+                                <rect key="frame" x="160" y="28" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pedra" translatesAutoresizingMaskIntoConstraints="NO" id="BZR-ss-bQA">
+                                <rect key="frame" x="16" y="82" width="343" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="3ey-ID-Luf"/>
+                                    <constraint firstAttribute="height" constant="254" id="e51-rc-ekt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocw-dm-Xxp">
+                                <rect key="frame" x="153" y="354" width="68" height="30"/>
+                                <state key="normal" title="Ganhador"/>
+                                <connections>
+                                    <action selector="alerta:" destination="DVw-8f-XLd" eventType="touchUpInside" id="yHC-Yi-uAJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BZR-ss-bQA" firstAttribute="top" secondItem="W3y-wP-aaQ" secondAttribute="bottom" constant="33" id="1dK-Es-DMs"/>
+                            <constraint firstItem="Ocw-dm-Xxp" firstAttribute="centerX" secondItem="H6b-SF-gg8" secondAttribute="centerX" id="KMb-Gy-FdX"/>
+                            <constraint firstItem="BZR-ss-bQA" firstAttribute="centerX" secondItem="H6b-SF-gg8" secondAttribute="centerX" id="Loo-lS-Fo8"/>
+                            <constraint firstItem="W3y-wP-aaQ" firstAttribute="top" secondItem="Olk-Cz-5Wh" secondAttribute="bottom" constant="8" id="cWc-ij-tmj"/>
+                            <constraint firstItem="Ocw-dm-Xxp" firstAttribute="top" secondItem="BZR-ss-bQA" secondAttribute="bottom" constant="18" id="cty-Y7-NhQ"/>
+                            <constraint firstItem="W3y-wP-aaQ" firstAttribute="centerX" secondItem="H6b-SF-gg8" secondAttribute="centerX" id="jLG-vK-0vK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pedra" image="pedra24x24" id="bEd-8L-mRg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NW0-zZ-kxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725.60000000000002" y="-577.06146926536735"/>
+        </scene>
+        <!--Tesoura-->
+        <scene sceneID="TDl-9i-UdC">
+            <objects>
+                <viewController id="Nis-iS-ju7" customClass="TesouraViewController" customModule="PedraPapelTesoura" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bcD-8q-w41"/>
+                        <viewControllerLayoutGuide type="bottom" id="v5I-53-zIU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rzK-vG-k5N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESOURA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uld-eY-FbL">
+                                <rect key="frame" x="148" y="28" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesoura" translatesAutoresizingMaskIntoConstraints="NO" id="Ge6-c4-lNX">
+                                <rect key="frame" x="16" y="97" width="343" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="OgF-V3-3TR"/>
+                                    <constraint firstAttribute="height" constant="254" id="RTf-nz-ut6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J51-YY-2rO">
+                                <rect key="frame" x="157" y="380" width="61" height="30"/>
+                                <state key="normal" title="Carregar"/>
+                                <connections>
+                                    <action selector="carregar:" destination="Nis-iS-ju7" eventType="touchUpInside" id="ykN-oU-zRf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J51-YY-2rO" firstAttribute="centerX" secondItem="rzK-vG-k5N" secondAttribute="centerX" id="KpT-m1-4ru"/>
+                            <constraint firstItem="Ge6-c4-lNX" firstAttribute="centerX" secondItem="rzK-vG-k5N" secondAttribute="centerX" id="R4T-9w-Bm6"/>
+                            <constraint firstItem="Ge6-c4-lNX" firstAttribute="top" secondItem="Uld-eY-FbL" secondAttribute="bottom" constant="48" id="faE-aV-Ari"/>
+                            <constraint firstItem="J51-YY-2rO" firstAttribute="top" secondItem="Ge6-c4-lNX" secondAttribute="bottom" constant="29" id="g2e-io-wwh"/>
+                            <constraint firstItem="Uld-eY-FbL" firstAttribute="top" secondItem="bcD-8q-w41" secondAttribute="bottom" constant="8" id="jBl-Kt-vEg"/>
+                            <constraint firstItem="Uld-eY-FbL" firstAttribute="centerX" secondItem="rzK-vG-k5N" secondAttribute="centerX" id="zSf-41-gr9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tesoura" image="tesoura24x24" id="e2V-pF-yXm"/>
+                    <connections>
+                        <outlet property="imageView" destination="Ge6-c4-lNX" id="roL-pg-A01"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wt6-nI-M1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="347"/>
+        </scene>
+        <!--Papel-->
+        <scene sceneID="zNa-gG-L0p">
+            <objects>
+                <viewController id="Kd0-LM-pRK" customClass="PedraViewController" customModule="PedraPapelTesoura" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X1n-5O-s35"/>
+                        <viewControllerLayoutGuide type="bottom" id="zxR-uI-vaw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="djH-ab-mfg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAPEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFA-IP-arG">
+                                <rect key="frame" x="162" y="28" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="ip5-UP-VXy">
+                                <rect key="frame" x="16" y="105" width="343" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="7Hc-xD-QwN"/>
+                                    <constraint firstAttribute="width" constant="343" id="k9S-gY-Xdf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZJ-ia-OKj">
+                                <rect key="frame" x="155" y="389" width="64" height="30"/>
+                                <state key="normal" title="Perdedor"/>
+                                <connections>
+                                    <action selector="perdedorAction:" destination="Kd0-LM-pRK" eventType="touchUpInside" id="nNN-gK-6me"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ip5-UP-VXy" firstAttribute="centerX" secondItem="djH-ab-mfg" secondAttribute="centerX" id="0ho-wh-2U8"/>
+                            <constraint firstItem="WZJ-ia-OKj" firstAttribute="centerX" secondItem="djH-ab-mfg" secondAttribute="centerX" id="3Vc-rS-yxo"/>
+                            <constraint firstItem="ip5-UP-VXy" firstAttribute="top" secondItem="kFA-IP-arG" secondAttribute="bottom" constant="56" id="52F-WA-kO9"/>
+                            <constraint firstItem="WZJ-ia-OKj" firstAttribute="top" secondItem="ip5-UP-VXy" secondAttribute="bottom" constant="30" id="GXC-1P-Nu1"/>
+                            <constraint firstItem="kFA-IP-arG" firstAttribute="centerX" secondItem="djH-ab-mfg" secondAttribute="centerX" id="eo4-uO-QpI"/>
+                            <constraint firstItem="kFA-IP-arG" firstAttribute="top" secondItem="X1n-5O-s35" secondAttribute="bottom" constant="8" id="lLD-dI-0Zo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Papel" image="papel24x24" id="su0-cU-pH1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="maB-87-2Jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818" y="-284"/>
+        </scene>
+        <!--Perdedor View Controller-->
+        <scene sceneID="ihe-sQ-qAX">
+            <objects>
+                <viewController storyboardIdentifier="sbPerdedor" id="LsI-hc-kPV" customClass="PerdedorViewController" customModule="PedraPapelTesoura" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mOJ-Yp-IOf"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ya-7J-eea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Es1-PV-Rhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perdedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVl-Hf-Vmr">
+                                <rect key="frame" x="152" y="61" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VACILOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8A6-hF-tvD">
+                                <rect key="frame" x="124" y="122" width="127" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1e-ob-nqL">
+                                <rect key="frame" x="163" y="222" width="48" height="30"/>
+                                <state key="normal" title="Fechar"/>
+                                <connections>
+                                    <action selector="done:" destination="LsI-hc-kPV" eventType="touchUpInside" id="qL9-Ar-GPR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EVl-Hf-Vmr" firstAttribute="top" secondItem="mOJ-Yp-IOf" secondAttribute="bottom" constant="41" id="22P-In-DSY"/>
+                            <constraint firstItem="B1e-ob-nqL" firstAttribute="centerX" secondItem="Es1-PV-Rhz" secondAttribute="centerX" id="5kb-sq-j7n"/>
+                            <constraint firstItem="EVl-Hf-Vmr" firstAttribute="centerX" secondItem="Es1-PV-Rhz" secondAttribute="centerX" id="VUO-eb-iIf"/>
+                            <constraint firstItem="8A6-hF-tvD" firstAttribute="top" secondItem="EVl-Hf-Vmr" secondAttribute="bottom" constant="40" id="f3y-7G-sNX"/>
+                            <constraint firstItem="8A6-hF-tvD" firstAttribute="centerX" secondItem="Es1-PV-Rhz" secondAttribute="centerX" id="qKN-ZF-376"/>
+                            <constraint firstItem="B1e-ob-nqL" firstAttribute="top" secondItem="8A6-hF-tvD" secondAttribute="bottom" constant="63" id="si6-Uo-Fpg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelComponente" destination="8A6-hF-tvD" id="Et5-Tb-4lq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1X8-hf-clI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="-1004"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="papel" width="216" height="226"/>
+        <image name="papel24x24" width="24" height="23"/>
+        <image name="pedra" width="216" height="226"/>
+        <image name="pedra24x24" width="24" height="23"/>
+        <image name="tesoura" width="216" height="226"/>
+        <image name="tesoura24x24" width="24" height="23"/>
+    </resources>
+</document>
