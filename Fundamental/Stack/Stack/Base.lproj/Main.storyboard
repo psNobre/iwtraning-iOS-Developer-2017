@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XzX-zE-yRK">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angelica" translatesAutoresizingMaskIntoConstraints="NO" id="XHy-Hn-8lm">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="95"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angelica" translatesAutoresizingMaskIntoConstraints="NO" id="Zmr-kr-nRI">
+                                        <rect key="frame" x="0.0" y="105" width="343" height="94.5"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TPF-Ur-JAy">
+                                        <rect key="frame" x="0.0" y="209.5" width="343" height="95"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="iiT-cp-iEZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="95"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pedra" translatesAutoresizingMaskIntoConstraints="NO" id="YoS-IP-sm7">
+                                                <rect key="frame" x="117.5" y="0.0" width="108" height="95"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesoura" translatesAutoresizingMaskIntoConstraints="NO" id="4D0-IR-hfh">
+                                                <rect key="frame" x="235.5" y="0.0" width="107.5" height="95"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angelica" translatesAutoresizingMaskIntoConstraints="NO" id="80r-0J-sXT">
+                                        <rect key="frame" x="0.0" y="314.5" width="343" height="95"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-Id-65r">
+                                        <rect key="frame" x="0.0" y="419.5" width="343" height="94.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smurfs01" translatesAutoresizingMaskIntoConstraints="NO" id="StB-2f-98L">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="94.5"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smurfs02" translatesAutoresizingMaskIntoConstraints="NO" id="FKW-II-hvp">
+                                                <rect key="frame" x="114.5" y="0.0" width="114" height="94.5"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smurfs03" translatesAutoresizingMaskIntoConstraints="NO" id="qNf-6I-UFT">
+                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="94.5"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angelica" translatesAutoresizingMaskIntoConstraints="NO" id="iXW-UO-kpn">
+                                        <rect key="frame" x="0.0" y="524" width="343" height="95"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XzX-zE-yRK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="788-Eg-rf8"/>
+                            <constraint firstItem="XzX-zE-yRK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NwG-y4-qec"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XzX-zE-yRK" secondAttribute="bottom" constant="20" id="T35-9a-Llw"/>
+                            <constraint firstItem="XzX-zE-yRK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="YiV-x2-57T"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="angelica" width="600" height="600"/>
+        <image name="papel" width="216" height="226"/>
+        <image name="pedra" width="216" height="226"/>
+        <image name="smurfs01" width="130" height="154"/>
+        <image name="smurfs02" width="130" height="155"/>
+        <image name="smurfs03" width="130" height="116"/>
+        <image name="tesoura" width="216" height="226"/>
+    </resources>
+</document>
