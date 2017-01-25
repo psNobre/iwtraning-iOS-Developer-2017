@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerComposto" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picker Composto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDk-Oz-S5Y">
+                                <rect key="frame" x="122" y="28" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ket-M3-NYQ">
+                                <rect key="frame" x="0.0" y="75" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="JxE-aW-leF"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="i94-NI-qZF"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNl-kk-a7f">
+                                <rect key="frame" x="149" y="318" width="77" height="30"/>
+                                <state key="normal" title="Exibir Valor"/>
+                                <connections>
+                                    <action selector="exibirValor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3E-vE-645"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ket-M3-NYQ" secondAttribute="trailing" id="2aU-Xa-dqu"/>
+                            <constraint firstItem="UNl-kk-a7f" firstAttribute="top" secondItem="Ket-M3-NYQ" secondAttribute="bottom" constant="27" id="Be6-ny-hfT"/>
+                            <constraint firstItem="bDk-Oz-S5Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C0L-pf-oAb"/>
+                            <constraint firstItem="bDk-Oz-S5Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OEv-qA-MNK"/>
+                            <constraint firstItem="UNl-kk-a7f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YPW-ow-Dqt"/>
+                            <constraint firstItem="Ket-M3-NYQ" firstAttribute="top" secondItem="bDk-Oz-S5Y" secondAttribute="bottom" constant="26" id="kfd-ps-9Wq"/>
+                            <constraint firstItem="Ket-M3-NYQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wde-hO-gyK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="Ket-M3-NYQ" id="SS1-mp-dHC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
