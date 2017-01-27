@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Internacionalizacao
+
+  Created by Aluno03 on 26/01/17.
+  Copyright © 2017 pedronobre. All rights reserved.
+*/
+"label" = "English";
+
+"welcome" = "Welcome #name#";

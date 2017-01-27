@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "0eh-4y-I8r"; */
+"0eh-4y-I8r.normalTitle" = "Registro";
+
+/* Class = "UILabel"; text = "This Registration is not useful."; ObjectID = "FwQ-r8-zw8"; */
+"FwQ-r8-zw8.text" = "Este registro não é nada.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Iiy-ij-NUF"; */
+"Iiy-ij-NUF.text" = "Label";
+
+/* Class = "UILabel"; text = "Type your name:"; ObjectID = "a4d-pe-QFu"; */
+"a4d-pe-QFu.text" = "Digite seu nome:";
+
+/* Class = "UILabel"; text = "Internationalization"; ObjectID = "uqS-sz-ly3"; */
+"uqS-sz-ly3.text" = "Internacionalização";
